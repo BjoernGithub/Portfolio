@@ -1,0 +1,151 @@
+/* root til farver og font så de hurtigt kan ændres alle steder de bliver brugt */
+:root{
+    --color-background: #17131F;
+    --color-title: #EFD5F2;
+    --color-broadtext: #D3B3F2;
+    --color-select: #535AF2;
+    --color-unselect: #B699F3;
+    --color-text: #EFD5F2;
+    --color-darktext: #322EA6;
+    --font-main: 'Monaco', Courier New, Courier, monospace;
+}
+
+*{
+    margin: 0;
+    background-color: var(--color-background);
+}
+
+
+/* header start */
+.banner{
+    width: 100%;
+    position:static;
+}
+
+.icon{
+    width: 25%;
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -65px; /* skubber ikonet opad over banneret */
+    border-radius: 10px; /* border radius runder hjørnerne på ikon */
+}
+
+.home{
+    text-decoration: none; /* fjerne underskrej og blå farve på link */
+    display: block;
+    font-size: 2rem;
+    font-family: var(--font-main);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: var(--color-title);
+}
+
+/* aktiv og ikke aktiv nav link */
+.active{
+    text-decoration: none;
+    color: var(--color-select)
+}
+.inactive{
+    text-decoration: none;
+    color: var(--color-unselect);
+}
+
+/* centrerer hele nav bar */
+.nav{
+    font-size: 1.6rem;
+    font-family: var(--font-main);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--color-select);
+}
+/* header slut */
+
+
+h3{
+    font-size: 1.2rem;
+    font-family: var(--font-main);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0px 20px 0px 20px;
+    color: var(--color-text);
+}
+
+p{
+    font-size: 1rem;
+    font-family: var(--font-main);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px 20px 0px 20px;
+    color: var(--color-text);
+}
+
+/* styling af link i tekst på forside */
+.p_link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color-select)
+}
+
+/* styling af email på kontaktside */
+.email{
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: var(--color-unselect)
+}
+
+/* styling af besked emne felt på kontaktside */
+.subject{
+    background-color: var(--color-text);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    width: 90%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    color: var(--color-darktext);
+}
+
+/* styling af besked felt på kontaktside */
+.message{
+    background-color: var(--color-text);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    width: 90%;
+    height: 150px;
+    padding-left: 10px;
+    border: none;
+    color: var(--color-darktext);
+}
+
+::placeholder{ /* farve af tekst i besked felt, før du skriver */
+    color: var(--color-unselect);
+}
+
+
+/* footer med hjem, email og tilbage til top knapper */
+.grid{
+    display: grid; /* grid til at opdele elementer */
+    grid-template-columns: 25% 50% 25%; /* størelsen på de tre "bokse" */
+    bottom: 0; /* footer fastsat til bunden af siden */
+    align-content: center;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+    position: static; /* fastsætter position */
+    border-top: solid var(--color-unselect);
+}
+
+.grid-item{ /* styling af elementerne i grid - centrerer dem i hver sin "boks" */
+    display: block;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
