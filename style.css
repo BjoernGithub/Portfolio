@@ -2,7 +2,7 @@
 :root{
     --color-background: #17131F;
     --color-title: #EFD5F2;
-    --color-broadtext: #D3B3F2;
+    --color-hover: #D3B3F2;
     --color-select: #535AF2;
     --color-unselect: #B699F3;
     --color-text: #EFD5F2;
@@ -613,6 +613,14 @@
         color: var(--color-title);
     }
 
+    .home:hover{ /* hover effekt når skærm bliver til desktop */
+        color: var(--color-hover);
+    }
+
+    .inactive:hover{ /* hover effekt når skærm bliver til desktop */
+        color: var(--color-hover);
+    }
+
     /* centrerer hele nav bar */
     .nav{
         font-size: 2rem;
@@ -623,6 +631,20 @@
         color: var(--color-select);
     }
     /* header slut */
+
+
+    .p_link:hover{ /* hover på link i forsiden på desktop størrelse */
+        color: var(--color-hover);
+    }
+
+    .subject{ /* gør besked felt på kontaktside tyndere når skærmen er breddere */
+        width: 75%;
+    }
+
+    .message{ /* gør besked felt på kontaktside tyndere når skærmen er breddere */
+        width: 75%;
+        height: 200px; /* gør besked felt lidt højere */
+    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -650,6 +672,10 @@
 
     .grid-image{ /* styling af billeder i grid */
         width: 75%;
+    }
+
+    .grid-image:hover{ /* hover på knapper i footer */
+        opacity: 80%; /* bruger gennemsigtighed da knapperne er billeder */
     }
     /* footer slut */
 }
@@ -694,6 +720,14 @@
         color: var(--color-title);
     }
 
+    .home:hover{ /* hover effekt når skærm bliver til desktop */
+        color: var(--color-hover);
+    }
+
+    .inactive:hover{ /* hover effekt når skærm bliver til desktop */
+        color: var(--color-hover);
+    }
+
     /* centrerer hele nav bar */
     .nav{
         font-size: 2rem;
@@ -704,6 +738,20 @@
         color: var(--color-select);
     }
     /* header slut */
+
+
+    .p_link:hover{ /* hover på link i forsiden på desktop størrelse */
+        color: var(--color-hover);
+    }
+
+    .subject{ /* gør besked felt på kontaktside tyndere når skærmen er breddere */
+        width: 75%;
+    }
+
+    .message{ /* gør besked felt på kontaktside tyndere når skærmen er breddere */
+        width: 75%;
+        height: 200px; /* gør besked felt lidt højere */
+    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -731,6 +779,10 @@
 
     .grid-image{ /* styling af billeder i grid */
         width: 75%;
+    }
+
+    .grid-image:hover{ /* hover på knapper i footer */
+        opacity: 80%; /* bruger gennemsigtighed da knapperne er billeder */
     }
     /* footer slut */
 }
