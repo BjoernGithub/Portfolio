@@ -6,8 +6,9 @@
     --color-select: #535AF2;
     --color-unselect: #B699F3;
     --color-text: #EFD5F2;
-    --color-darktext: #322EA6;
-    --font-main: 'Monaco', Courier New, Courier, monospace;
+    --color-darktext: #1d1a66;
+    --font-title: 'Courier New', Courier, monospace;
+    --font-main: 'Courier New', Courier, monospace;
 }
 
 *{
@@ -17,74 +18,134 @@
 
 
 /* elementer som ikke er påvirket af skærm størrelse */
-    /* aktiv og ikke aktiv nav link */ 
-    .active{
-        text-decoration: none; /* fjerner skrej og blå farve på link */
-        color: var(--color-select)
-    }
-    .inactive{
-        text-decoration: none; /* fjerner skrej og blå farve på link */
-        color: var(--color-unselect);
-    }
 
-    ::placeholder{ /* farve af tekst i besked felt på kontaktside, før du skriver */
-        color: var(--color-unselect);
-    }
+/* aktiv og ikke aktiv nav link */ 
+.active{
+    text-decoration: none; /* fjerner skrej og blå farve på link */
+    color: var(--color-select)
+}
+.inactive{
+    text-decoration: none; /* fjerner skrej og blå farve på link */
+    color: var(--color-unselect);
+}
+
+::placeholder{ /* farve af tekst i besked felt på kontaktside, før du skriver */
+    color: var(--color-unselect);
+}
 
 
-    /* body start */
-    h3{ /* kategori titler */
-        font-size: 1.2rem;
-        font-family: var(--font-main);
-        text-align: center;
-        margin-bottom: 10px;
-        padding: 0px 20px 0px 20px;
-        color: var(--color-text);
-    }
+/* body start */
+h3{ /* kategori titler */
+    font-size: 1.4rem;
+    font-family: var(--font-title);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0px 20px 0px 20px;
+    color: var(--color-text);
+}
 
-    p{ /* brødtekst */
-        font-size: 1rem;
-        font-family: var(--font-main);
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 0px 20px 0px 20px;
-        color: var(--color-text);
-    }
+p{ /* brødtekst */
+    font-size: 1rem;
+    font-family: var(--font-main);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px 20px 0px 20px;
+    color: var(--color-text);
+}
 
-    .p_link{ /* styling af link i tekst på forside */
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: var(--color-select)
-    }
 
-    .email{ /* styling af email på kontaktside */
-        text-decoration: underline;
-        font-size: 1.2rem;
-        color: var(--color-unselect)
-    }
+.text-bubble{ /* "talebubler" på about side */
+    background-color: var(--color-text);
+    padding-top: 30px;
+    margin-top: 60px;
+}
 
-    .subject{ /* styling af besked emne felt på kontaktside */
-        background-color: var(--color-text);
-        font-size: 1rem;
-        font-family: var(--font-main);
-        width: 90%;
-        margin-bottom: 10px;
-        padding-left: 10px;
-        border: none;
-        color: var(--color-darktext);
-    }
+.text-bubble h3{ /* skifter farve på tekst og baggrund i talebubbler */
+    font-size: 1.4rem;
+    font-family: var(--font-title);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0px 60px 0px 60px;
+    color: var(--color-darktext);
+    background-color: var(--color-text);
+}
 
-    .message{ /* styling af besked felt på kontaktside */
-        background-color: var(--color-text);
-        font-size: 1rem;
-        font-family: var(--font-main);
-        width: 90%;
-        height: 150px;
-        padding-left: 10px;
-        border: none;
-        color: var(--color-darktext);
-    }
-    /* body slut */
+.text-bubble p{ /* skifter farve på tekst og baggrund i talebubbler */
+    font-size: 1rem;
+    font-family: var(--font-main);
+    font-weight: 550; /* gør brødtekst lidt tykkere og lettere at læse */
+    text-align: center;
+    margin-bottom: 0;
+    color: var(--color-darktext);
+    background-color: var(--color-text);
+}
+
+.dark_link{ /* link i talebubbler */
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color-select);
+    background-color: var(--color-text);
+}
+
+.about{ /* styling af billeder i about */
+    width: 100%;
+}
+
+.trivia{ /* styling af trivia tekst i about */
+    font-size: 0.8rem;
+    font-family: var(--font-main);
+    text-align: left;
+    margin-right: 160px;
+    margin-top: -75px;
+    padding-bottom: 40px;
+}
+
+.trivia-left{ /* styling af trivia tekst i about når figuring er til venstre */
+    font-size: 0.8rem;
+    font-family: var(--font-main);
+    text-align: left;
+    margin-left: 160px; /* bruger left i stedet for right */
+    margin-top: -75px;
+    padding-bottom: 40px;
+}
+
+
+.p_link{ /* styling af link i tekst på forside og about */
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color-select);
+}
+
+
+.email{ /* styling af email på kontaktside og about */
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: var(--color-unselect);
+}
+
+.subject{ /* styling af besked emne felt på kontaktside */
+    background-color: var(--color-text);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    width: 90%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    color: var(--color-darktext);
+}
+
+.message{ /* styling af besked felt på kontaktside */
+    background-color: var(--color-text);
+    font-size: 1rem;
+    font-family: var(--font-main);
+    width: 90%;
+    height: 150px;
+    padding-left: 10px;
+    border: none;
+    color: var(--color-darktext);
+}
+/* body slut */
+
 /* ikke påvirket af skærm størrelse */
 
 
@@ -122,7 +183,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -133,7 +194,7 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 1.3rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -202,7 +263,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -213,7 +274,7 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 1.3rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -282,7 +343,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -293,7 +354,7 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 1.6rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -362,7 +423,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2.4rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -373,13 +434,18 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 1.8rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
         color: var(--color-select);
     }
     /* header slut */
+
+
+    .text-bubble{ /* giver mere padding i talebubler på about side */
+        padding-top: 40px;
+    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -443,7 +509,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2.6rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -454,13 +520,22 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
         color: var(--color-select);
     }
     /* header slut */
+
+
+    p{ /* mere padding på brødtekstnår skærmen bliver størrere */
+        padding: 0px 60px 0px 60px;
+    }
+
+    .text-bubble{ /* giver mere padding i talebubler på about side */
+        padding-top: 40px;
+    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -524,7 +599,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2.6rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -535,13 +610,22 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
         color: var(--color-select);
     }
     /* header slut */
+
+
+    p{ /* mere padding på brødtekst når skærmen bliver størrere */
+        padding: 0px 60px 0px 60px;
+    }
+
+    .text-bubble{ /* giver mere padding i talebubler på about side */
+        padding-top: 40px;
+    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -605,7 +689,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2.6rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -624,7 +708,7 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -632,6 +716,10 @@
     }
     /* header slut */
 
+
+    p{ /* mere padding på brødtekst når skærmen bliver størrere */
+        padding: 0px 60px 0px 60px;
+    }
 
     .p_link:hover{ /* hover på link i forsiden på desktop størrelse */
         color: var(--color-hover);
@@ -644,6 +732,14 @@
     .message{ /* gør besked felt på kontaktside tyndere når skærmen er breddere */
         width: 75%;
         height: 200px; /* gør besked felt lidt højere */
+    }
+
+    .dark_link:hover{ /* hover på link i about på desktop størrelse */
+        color: var(--color-unselect);
+    }
+
+    .text-bubble{ /* giver mere padding i talebubler på about side */
+        padding-top: 50px;
     }
 
 
@@ -712,7 +808,7 @@
         text-decoration: none; /* fjerne underskrej og blå farve på link */
         display: block;
         font-size: 2.6rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -731,7 +827,7 @@
     /* centrerer hele nav bar */
     .nav{
         font-size: 2rem;
-        font-family: var(--font-main);
+        font-family: var(--font-title);
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -739,6 +835,10 @@
     }
     /* header slut */
 
+
+    p{ /* mere padding på brødtekst når skærmen bliver størrere */
+        padding: 0px 60px 0px 60px;
+    }
 
     .p_link:hover{ /* hover på link i forsiden på desktop størrelse */
         color: var(--color-hover);
@@ -751,6 +851,14 @@
     .message{ /* gør besked felt på kontaktside tyndere når skærmen er breddere */
         width: 75%;
         height: 200px; /* gør besked felt lidt højere */
+    }
+
+    .dark_link:hover{ /* hover på link i about på desktop størrelse */
+        color: var(--color-unselect);
+    }
+
+    .text-bubble{ /* giver mere padding i talebubler på about side */
+        padding-top: 60px;
     }
 
 
