@@ -35,6 +35,7 @@ h3{ /* kategori titler */
     font-size: 1.4rem;
     font-family: var(--font-title);
     text-align: center;
+    margin-bottom: 10px;
     padding: 0px 20px 0px 20px;
     color: var(--color-text);
 }
@@ -43,32 +44,9 @@ p{ /* brødtekst */
     font-size: 1rem;
     font-family: var(--font-main);
     text-align: center;
+    margin-bottom: 20px;
     padding: 0px 20px 0px 20px;
     color: var(--color-text);
-}
-
-
-.category_flex{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-.category{
-    display: block;
-    align-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 35px;
-}
-
-.category_image{
-    width: 300px;
 }
 
 
@@ -124,11 +102,6 @@ p{ /* brødtekst */
         color: var(--color-select);
     }
     /* header slut */
-
-
-    .category_image{
-        width: 200px;
-    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -211,11 +184,6 @@ p{ /* brødtekst */
     /* header slut */
 
 
-    .category_image{
-        width: 200px;
-    }
-
-
     /* footer med hjem, email og tilbage til top knapper */
     .grid{
         display: grid; /* grid til at opdele elementer */
@@ -296,11 +264,6 @@ p{ /* brødtekst */
     /* header slut */
 
 
-    .category_image{
-        width: 250px;
-    }
-
-
     /* footer med hjem, email og tilbage til top knapper */
     .grid{
         display: grid; /* grid til at opdele elementer */
@@ -379,11 +342,6 @@ p{ /* brødtekst */
         color: var(--color-select);
     }
     /* header slut */
-
-
-    .category_image{
-        width: 300px;
-    }
 
 
     /* footer med hjem, email og tilbage til top knapper */
@@ -471,10 +429,6 @@ p{ /* brødtekst */
         padding: 0px 60px 0px 60px;
     }
 
-    .category_image{
-        width: 400px;
-    }
-
 
     /* footer med hjem, email og tilbage til top knapper */
     .grid{
@@ -559,10 +513,6 @@ p{ /* brødtekst */
 
     p{ /* mere padding på brødtekst når skærmen bliver størrere */
         padding: 0px 60px 0px 60px;
-    }
-
-    .category_image{
-        width: 400px;
     }
 
 
@@ -657,14 +607,6 @@ p{ /* brødtekst */
 
     p{ /* mere padding på brødtekst når skærmen bliver størrere */
         padding: 0px 60px 0px 60px;
-    }
-
-    .category_image{ /* større kategori billeder da skærmen er blevet større */
-        width: 400px;
-    }
-
-    .category:hover{ /* hover ved desktop størrelse */
-        transform: scale(1.02); /* gør kategori billeder større når musen er over dem */
     }
 
 
@@ -763,14 +705,6 @@ p{ /* brødtekst */
 
     p{ /* mere padding på brødtekst når skærmen bliver størrere */
         padding: 0px 60px 0px 60px;
-    }
-
-    .category_image{ /* større kategori billeder da skærmen er blevet større */
-        width: 400px;
-    }
-
-    .category:hover{ /* hover ved desktop størrelse */
-        transform: scale(1.02); /* gør kategori billeder større når musen er over dem */
     }
 
 
