@@ -50,6 +50,49 @@ p{ /* brødtekst */
 }
 
 
+.link{ /* styling på store link */
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-family: var(--font-main);
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color-select);
+}
+
+.wip{ /* billed på sider der ikke er færdige */
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.row{ /* billeder i flex, så de sætter sig ved siden af hinanden */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.column{ /* bestemmer antal kolonner af billeder - her 2 */
+    flex: 50%;
+    max-width: 50%;
+}
+
+.column img { /* størrelse af billeder i flex */
+    width: 90%;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+
 
 /* media queries til justering af header og footer igennem skærmbredderne 360px, 428px, 600px, 700px, 770px, 890px og 1010px 
 - i header justerer de placering af ikon, størrlese af titel og navbar, og senere skifter banner til en størrere version
