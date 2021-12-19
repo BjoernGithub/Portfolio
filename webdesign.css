@@ -49,6 +49,86 @@ p{ /* brødtekst */
     color: var(--color-text);
 }
 
+.wip{ /* billed på sider der ikke er færdige */
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.more{ /* tekst inde i læs mere bokse */
+    text-align: left;
+    padding: 0px 20px 10px 40px;
+}
+
+.big{ /* billeder over læs mere bokse */
+    display: block;
+    width: 80%;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+
+.small{ /* billeder inde i læs mere bokse */
+    width: 200px;
+    float: left;
+    padding: 10px 10px 10px 0px;
+}
+
+.link{ /* styling på store link */
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-family: var(--font-main);
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: var(--color-select);
+}
+
+.p_link{ /* styling på link inde i tekst */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font-main);
+    text-align: left;
+    color: var(--color-select);
+}
+
+button{ /* styling på læs mere knapper */
+    font-size: 1rem;
+    font-family: var(--font-main);
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 5px;
+    border: solid var(--color-unselect);
+    border-radius: 5px;
+    color: var(--color-unselect);
+}
+
+/* gemmer tekst inde i de forskellige læs mere bokse, før man klikker på knapperne */
+#more1{
+    display: none;
+}
+
+#more2{
+    display: none;
+}
+
+#more3{
+    display: none;
+}
+
+#more4{
+    display: none;
+}
 
 
 /* media queries til justering af header og footer igennem skærmbredderne 360px, 428px, 600px, 700px, 770px, 890px og 1010px 
@@ -609,6 +689,19 @@ p{ /* brødtekst */
         padding: 0px 60px 0px 60px;
     }
 
+    button:hover{
+        color: var(--color-hover);
+        border-color: var(--color-hover);
+    }
+
+    .link:hover{
+        color: var(--color-hover);
+    }
+
+    .p_link:hover{
+        color: var(--color-hover);
+    }
+
 
     /* footer med hjem, email og tilbage til top knapper */
     .grid{
@@ -705,6 +798,19 @@ p{ /* brødtekst */
 
     p{ /* mere padding på brødtekst når skærmen bliver størrere */
         padding: 0px 60px 0px 60px;
+    }
+
+    button:hover{
+        color: var(--color-hover);
+        border-color: var(--color-hover);
+    }
+
+    .link:hover{
+        color: var(--color-hover);
+    }
+
+    .p_link:hover{
+        color: var(--color-hover);
     }
 
 
