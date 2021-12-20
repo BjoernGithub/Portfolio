@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <meta charset="utf-8">
       <title>Portfolio</title>
       <link rel="stylesheet" type="text/css" href="webdesign.css">
+      <script src="main.js"></script> <!-- javascript til en læs mere knap -->
    </head>
 
-   <script src="main.js"></script> <!-- javascript til en læs mere knap -->
-
+   <body>
    <header>
       <img class="mobile_banner" src="Main_img/mobile_banner.jpg" alt="banner">
       <img class="desk_banner" src="Main_img/desktop_banner.png" alt="banner">
@@ -23,49 +23,49 @@
       </h3>
    </header>
 
-   <body>
-      <section>
-         <img class="big" src="Web-Art_img/Webdesign/moohvie_pro.png" alt="moohvie">
-         <h3>Moohvie prototype</h3>
-         <p>
-            Ever been lost and unable to find out which movie to watch? Look no further than the Moohvie film generator.
+   
+   <section>
+      <img class="big" src="Web-Art_img/Webdesign/moohvie_pro.png" alt="moohvie">
+      <h3>Moohvie prototype</h3>
+      <p>
+         Ever been lost and unable to find out which movie to watch? Look no further than the Moohvie film generator.
+      </p>
+      <p class="more">
+         <span id="span1"></span>
+         <span id="more1">
+               During the last weeks of September 2021 me and a group of classmates were part of the entrepreneurship competition known as the Startup Mission.
+               We were tasked to come up with a product from scratch and create it to whatever extend that we could. And after throwing around ideas of portable desks and mobile travel cards, we came to a much different idea.
+            <br>
+               A cow that generates 4 movies after being given a streaming service, a genre, year and rating.
+            <br>
+               Moohvie! Get it?
+            <br>
+            <img class="small" src="https://cdn.discordapp.com/attachments/922038011439484948/922107622310690816/unknown.png" alt="prototype">
+               In this project I was tasked as the head of product and design.
+               During this time I was solely working on a full prototype of how our app would look. Using Adobe XD, this was made nice and simple. And it was possible to link up the pages like an actual website.
+            <br>
+               And with my app prototype, me and my group were able to proceed and make a (somewhat) finished website.
+            <br>
+            <br>
+               Role: Design and product
+               <br>
+               Responsibility: Prototype in Adobe XD
+            <br>
+            <br>
+            <a class="link" href="https://xd.adobe.com/view/a9140a6e-8fc5-4e44-adfd-433da2912e6e-fc47/?fullscreen" target="_blank">Try out the prototype</a>
+            <br>
+               You can read more about the project <a class="p_link" href="websites.html">here</a> or directly visit the website <a class="p_link" href="http://bjoernb.online/moohvie.com-2/" target=">blank">here</a>.
+         </span>
          </p>
-            <span id="span1"></span>
-            <span id="more1">
-               <p class="more">
-                  During the last weeks of September 2021 me and a group of classmates were part of the entrepreneurship competition known as the Startup Mission.
-                  We were tasked to come up with a product from scratch and create it to whatever extend that we could. And after throwing around ideas of portable desks and mobile travel cards, we came to a much different idea.
-                  <br>
-                  A cow that generates 4 movies after being given a streaming service, a genre, year and rating.
-                  <br>
-                  Moohvie! Get it?
-               </p>
-               <p class="more">
-                  <img class="small" src="https://cdn.discordapp.com/attachments/922038011439484948/922107622310690816/unknown.png" alt="prototype">
-                  In this project I was tasked as the head of product and design.
-                  During this time I was solely working on a full prototype of how our app would look. Using Adobe XD, this was made nice and simple. And it was possible to link up the pages like an actual website.
-                  <br>
-                  And with my app prototype, me and my group were able to proceed and make a (somewhat) finished website.
-               </p>
-               <p class="more">
-                  Role: Design and product
-                  <br>
-                  Responsibility: Prototype in Adobe XD
-               </p>
-               <a class="link" href="https://xd.adobe.com/view/a9140a6e-8fc5-4e44-adfd-433da2912e6e-fc47/?fullscreen" target="_blank">Try out the prototype</a>
-               <p>
-                  You can read more about the project <a class="p_link" href="websites.html">here</a> or directly visit the website <a class="p_link" href="http://bjoernb.online/moohvie.com-2/" target=">blank">here</a>.
-               </p>
-            </span>
-         <button onclick="myFunction1()" id="button1">Show more</button> <!-- javascript til at åbne læs mere -->
-      </section>
+      <button onclick="myFunction1()" id="button1">Show more</button> <!-- javascript til at åbne læs mere -->
+   </section>
 
-      <a class="link" href="webdesign.html">Back to Webdesign overview</a>
-   </body>
+   <a class="link" href="webdesign.html">Back to Webdesign overview</a>
+   
 
    <footer class="grid"> <!-- footer -->
         <div class="grid-item">
-            <a href="index.html"><img class="grid-image" src="Main_img/home.png"home"></a>
+            <a href="index.html"><img class="grid-image" src="Main_img/home.png" alt="home"></a>
         </div>
         <div class="grid-item">
             <a href="contact.html"><img class="grid-image" src="Main_img/mail.png" alt="email"></a>
@@ -73,5 +73,6 @@
         <div class="grid-item">
             <a href="prototypes.html"><img class="grid-image" src="Main_img/return.png" alt="arrow"></a>
         </div>
- </footer>
+   </footer>
+   </body>
 </html>
